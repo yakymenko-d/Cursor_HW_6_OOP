@@ -14,19 +14,70 @@ h1{
 }
 h2{
 	font-family: 'Montserrat', sans-serif;
-	color: #898989;
+	color: grey;
 	text-align: center;
 	font-size: 32px;
+	transition: all .1s ease-in-out;
 }
-.doctor_2{
+h2:hover{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
+	transition: all .1s ease-in-out;
+}
+.doctor{
 	height: 590px;
 	position: absolute;
 	left: 1200px;
 	opacity: 0.5;
 	transition: all .3s ease-in-out;
 }
-.doctor_2:hover{
+.doctor:hover{
 	opacity: 1;
 	transition: all .3s ease-in-out;
+}
+.active_doctor {
+	opacity: 1;
+	transition: all .3s ease-in-out;
+}
+
+.container{
+    width: 1150px;
+    height: 400px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    padding: 40px;
+}
+
+.line{
+    height: 50px;
+    width: 100%;
+    transition: width, .3s;
+    background-image: linear-gradient(to right, #29323c, #485563);
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.timer{
+    padding-top: 30px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 20px 0 20px 0;
+    background: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    transition: all .1s ease-in-out;
+}
+button:hover{
+    background: white;
+    color: #29323c;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
